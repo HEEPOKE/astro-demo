@@ -1,0 +1,15 @@
+---
+import ContentLayOut from "../../layouts/ContentLayout.astro";
+import MainContentLayOut from "../../layouts/MainContentLayout";
+import TableCommon from "../../common/TableCommon";
+
+const storeColumns = ["NO.", "NAME", "MANAGE"];
+---
+
+<ContentLayOut>
+  <MainContentLayOut
+    title="store"
+    topic="store"
+    page={(<TableCommon columns={storeColumns} row={[]} id={"store-table"} />)}
+  />
+</ContentLayOut>
